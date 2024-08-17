@@ -47,15 +47,15 @@ export default function QualitiesList() {
       {qualities.map((quality, index) => (
         <div
           key={index}
-          className="basis-1/4 grow px-7 py-6 rounded-lg flex flex-col gap-y-6 transition ease-in-out duration-500 hover:scale-110 hover:bg-gray-200"
+          className="basis-full lg:basis-1/4 grow px-2.5 py-3 lg:px-7 lg:py-6 rounded-lg flex flex-col gap-y-6 transition ease-in-out duration-500 hover:scale-110"
         >
           <div className="flex items-start gap-4">
             <div className="w-8 h-8">{quality.icon}</div>
-            <span className="text-light-200 capitalize font-bold text-[20px]">
+            <span className="capitalize font-bold text-[20px]">
               {quality.name}
             </span>
           </div>
-          <p className="text-light-300">{quality.description}</p>
+          <p className="text-zinc-300">{quality.description}</p>
         </div>
       ))}
     </div>

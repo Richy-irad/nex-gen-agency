@@ -26,16 +26,16 @@ export default function Benefits() {
       {benefits.map((benefit, index) => (
         <div
           key={index}
-          className="w-full lg:w-3/4 px-3 py-3 rounded-lg flex gap-6 items-center transition ease-in-out duration-500 hover:scale-110 hover:bg-gray-200"
+          className="w-full lg:w-3/4 px-3 py-3 rounded-lg flex gap-6 items-start lg:items-center transition ease-in-out duration-500 hover:scale-110"
         >
           <div className="w-8 h-8 shrink-0">
             <CheckBadgeIcon />
           </div>
           <div className="space-2">
-            <p className="text-light-200 capitalize font-bold text-[20px]">
+            <p className="capitalize font-bold text-[20px]">
               {benefit.title}
             </p>
-            <p className="text-light-300">{benefit.description}</p>
+            <p className="text-zinc-300">{benefit.description}</p>
           </div>
         </div>
       ))}
