@@ -1,42 +1,42 @@
 "use client";
 
 import {
-  CheckBadgeIcon,
-  PuzzlePieceIcon,
-  RocketLaunchIcon,
+  ArrowTrendingUpIcon,
+  LightBulbIcon,
+  SparklesIcon,
   TrophyIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 
 const qualities = [
   {
-    name: "Expertise",
+    name: "Passionate Team",
     description:
-      "Our team comprises industry veterans with years of experience in photography and videography.",
+      "Our young and dynamic team is dedicated to delivering results with creativity and enthusiasm.",
     icon: <UserGroupIcon />,
   },
   {
-    name: "Quality",
+    name: "Trend Awareness",
     description:
-      "We use state-of-the-art equipment and techniques to ensure the highest quality output.",
-    icon: <CheckBadgeIcon />,
+      "We leverage our understanding of the latest trends to create content that resonates with today&apos;s audiences.",
+    icon: <ArrowTrendingUpIcon />,
   },
   {
-    name: "Tailored Solutions",
+    name: "Fresh Ideas",
     description:
-      "Custom photography and videography services designed to meet your specific needs.",
-    icon: <PuzzlePieceIcon />,
+      "We bring innovative solutions tailored to your brand’s needs, helping you stay ahead of the competition.",
+    icon: <LightBulbIcon />,
   },
   {
-    name: "Fast Turnaround",
+    name: "Outside-the-Box Thinking",
     description:
-      "We understand the importance of time in the industry and ensure quick delivery without compromising quality.",
-    icon: <RocketLaunchIcon />,
+      "Our approach is fresh and innovative, ensuring your content stands out in a crowded marketplace.",
+    icon: <SparklesIcon />,
   },
   {
-    name: "Comprehensive Services",
+    name: "Real Results",
     description:
-      "From pre-production planning to post-production editing, we handle it all.",
+      "Our content doesn&pos;t just look good; it drives tangible outcomes for your business.",
     icon: <TrophyIcon />,
   },
 ];

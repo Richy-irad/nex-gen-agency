@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "@/components/footer";
 import QualitiesList from "@/components/qualities";
+import Benefits from "@/components/benefits";
+import { ShieldCheckIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -9,23 +12,26 @@ export default function Home() {
       <div className="text-center flex flex-col gap-y-8">
         <h1 className="text-4xl font-bold">NexGen Agency</h1>
         <h2 className="text-6xl font-bold">
-          Crafting Visual Stories That Speak Volumes
+          Where Fresh Ideas Lead to Real Results
         </h2>
-        <p className="text-lg">
-          Your premier destination for professional photography and videography
-          services. We capture moments that matter, delivering stunning visuals
-          that tell your story.
-        </p>
+        <div className="flex w-full">
+          <p className="basis-full lg:basis-2/3 mx-auto text-center text-lg">
+            At NexGen Agency, we deliver fresh ideas that grow your business. We
+            create content that looks great and drives real results, whether
+            boosting your online presence or connecting with customers.
+          </p>
+        </div>
         <video controls preload="auto" className="rounded-lg w-full h-auto">
           <source src="/test-video.mp4" type="video/mp4" />
           Your browser does not support the video tag
         </video>
-        <button
-          type="button"
-          className="px-8 py-6 uppercase text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
+        <Link
+          href="https://calendly.com/contact-nexgenagency/30min"
+          target="_blank"
+          className="px-8 py-6 capitalize font-semibold text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
         >
           Book your spot now
-        </button>
+        </Link>
       </div>
 
       {/* <h2 className="text-3xl font-semibold">
@@ -34,7 +40,7 @@ export default function Home() {
       list of brands' logs */}
 
       <div className="flex flex-col gap-y-8 items-center">
-        <h2 className="text-3xl font-semibold">About us</h2>
+        <h2 className="text-3xl font-semibold capitalize">About us</h2>
         <div className="flex gap-x-4 items-center">
           <div className="basis-1/3 rounded-lg bg-gray-200">
             <Image
@@ -49,30 +55,72 @@ export default function Home() {
             <h3 className="font-semibold text-2xl">
               From Concept to Createtion: We make your Vision Shine
             </h3>
-            <p>
-              At NexGen Agency, we are passionate about bringing your vision to
-              life. With a team of experienced photographers and videographers,
-              we specialize in creating captivating content that resonates with
-              your audience.
-            </p>
-            <p>
-              Our mission is to deliver high-quality visuals that exceed your
-              expectations and help your brand stand out.
+            <p className="text-lg">
+              What makes us different? We are a young team with a passion for
+              what we do. Our age is our strength, allowing us to stay on top of
+              the latest trends and think outside the box. We approach each
+              project with energy and creativity, always aiming to exceed your
+              expectations. If you're looking to take your brand to the next
+              level, NexGen Agency is ready to help you succeed.
             </p>
           </div>
         </div>
-        <button
-          type="button"
-          className="px-8 py-6 uppercase text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
+        <Link
+          href="https://calendly.com/contact-nexgenagency/30min"
+          target="_blank"
+          className="px-8 py-6 capitalize font-semibold text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
         >
-          Book a call now!
-        </button>
+          Schedule Your Free Call!
+        </Link>
       </div>
 
       {/* qualities */}
       <div className="flex flex-col gap-y-8 items-center">
-        <h2 className="text-3xl font-semibold">Why choose NexGen Agency?</h2>
+        <h2 className="text-3xl font-semibold capitalize">Why work with us!</h2>
+
         <QualitiesList />
+        <Link
+          href="https://calendly.com/contact-nexgenagency/30min"
+          target="_blank"
+          className="px-8 py-6 capitalize font-semibold text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
+        >
+          Talk to our experts!
+        </Link>
+      </div>
+
+      {/* Benefits of working with us */}
+      <div className="flex flex-col gap-y-8 items-center">
+        <h2 className="w-full lg:w-2/3 text-3xl text-center font-semibold">
+          Why Settle for Ordinary? Discover the NexGen Difference!
+        </h2>
+        <p className="w-full lg:w-4/5 text-center text-lg">
+          Ready to elevate your brand with fresh ideas that deliver real
+          results? Book a free consultation call with our experts today and
+          let&apos;s create something extraordinary together!
+        </p>
+        <Benefits />
+        <Link
+          href="https://calendly.com/contact-nexgenagency/30min"
+          target="_blank"
+          className="px-8 py-6 capitalize font-semibold text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
+        >
+          Reserve Your Free Consultation!
+        </Link>
+      </div>
+
+      {/* money back guarantee */}
+      <div className="flex flex-col gap-y-8 items-center bg-gray-200 rounded-xl p-4">
+        <ShieldCheckIcon className="w-3/5 h-auto" />
+        <h2 className="w-full lg:w-2/3 text-3xl text-center font-semibold">
+          Risk-Free Results: Your Success, 100% Guaranteed or Your Money Back!
+        </h2>
+        <Link
+          href="https://calendly.com/contact-nexgenagency/30min"
+          target="_blank"
+          className="px-8 py-6 capitalize font-semibold text-lg bg-black text-white rounded-md self-center transition ease-in-out duration-500 hover:scale-110"
+        >
+          Reserve Your Free Consultation!
+        </Link>
       </div>
 
       {/* footer */}
