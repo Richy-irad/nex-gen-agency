@@ -9,6 +9,7 @@ import { getTranslatedContent } from "@/lib/translations/content";
 import { getTranslatedBenefits } from "@/lib/translations/benefits/benefits";
 import aboutImage from "../../../public/about-image.jpg";
 import HeroVideo from "@/components/hero-video";
+import Topbar from "@/components/top-bar";
 
 export default async function Home({ params }: { params: LangParams }) {
   const { lang } = params;
@@ -22,7 +23,7 @@ export default async function Home({ params }: { params: LangParams }) {
     <main className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between">
       {/* hero section */}
       <div className="text-center flex flex-col gap-y-8">
-        <h1 className="text-2xl lg:text-4xl font-bold">NexGen Agency</h1>
+        <Topbar currentLang={lang} />
         <h2 className="text-4xl lg:text-6xl font-bold">{hero.hook}</h2>
         <div className="flex w-full">
           <p className="basis-full lg:basis-2/3 mx-auto text-center text-base lg:text-lg text-zinc-300">
