@@ -19,8 +19,14 @@ export default function Topbar({ currentLang }: { currentLang: string }) {
 
   return (
     <div className="flex gap-4 w-full items-center justify-center">
-      <Image src={logo} alt="logo" className="w-16 h-16 rounded-lg" />
-      <h1 className="text-2xl lg:text-4xl font-bold">NexGen Agency</h1>
+      <div className="flex gap-2 lg:gap-4 items-center justify-center">
+        <Image
+          src={logo}
+          alt="logo"
+          className="w-12 h-12 lg:w-16 lg:h-16 rounded-lg"
+        />
+        <h1 className="text-2xl lg:text-4xl font-bold">NexGen Agency</h1>
+      </div>
       <Menu>
         <MenuButton className="inline-flex items-center gap-2 rounded-md bg-gray-800 py-1.5 px-3 text-sm uppercase font-semibold border border-white/5 bg-white/5 p-1 text-white">
           {currentLang}

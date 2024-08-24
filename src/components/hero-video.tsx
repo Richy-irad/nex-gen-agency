@@ -10,6 +10,11 @@ export default function HeroVideo() {
       height={1080}
       src="https://res.cloudinary.com/richy-irad/video/upload/v1724466817/hero-video_p6jvxd.mp4"
       className="rounded-lg w-full h-auto"
+      poster="https://res.cloudinary.com/richy-irad/image/upload/v1724535466/billy-k-image_om3wuy.jpg"
+      colors={{
+        base: "#1d4ed8",
+        text: "#ffffff",
+      }}
     />
   );
 }
