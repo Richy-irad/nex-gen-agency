@@ -37,7 +37,7 @@ export default function Topbar({ currentLang }: { currentLang: string }) {
           anchor="bottom start"
           className="flex flex-col w-20 origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white"
         >
-          <MenuItem as="button">
+          <MenuItem as="div">
             <button
               type="button"
               className="uppercase"
@@ -46,7 +46,7 @@ export default function Topbar({ currentLang }: { currentLang: string }) {
               en
             </button>
           </MenuItem>
-          <MenuItem>
+          <MenuItem as="div">
             <button
               type="button"
               className="uppercase"
