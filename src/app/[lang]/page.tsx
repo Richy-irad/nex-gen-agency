@@ -8,6 +8,9 @@ import { LangParams } from "@/lib/types";
 import { getTranslatedContent } from "@/lib/translations/content";
 import { getTranslatedBenefits } from "@/lib/translations/benefits/benefits";
 import aboutImage from "../../../public/about-image.jpg";
+import HeroVideo from "@/components/hero-video";
+import { CldVideoPlayer } from "next-cloudinary";
+import "next-cloudinary/dist/cld-video-player.css";
 
 export default async function Home({ params }: { params: LangParams }) {
   const { lang } = params;
@@ -28,10 +31,11 @@ export default async function Home({ params }: { params: LangParams }) {
             {hero.introduction}
           </p>
         </div>
-        <video controls preload="auto" className="rounded-lg w-full h-auto">
+        {/* <video controls preload="auto" className="rounded-lg w-full h-auto">
           <source src="hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag
-        </video>
+        </video> */}
+        <HeroVideo />
         <Link
           href="https://calendly.com/contact-nexgenagency/30min"
           target="_blank"
