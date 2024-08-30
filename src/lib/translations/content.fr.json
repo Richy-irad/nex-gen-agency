@@ -1,13 +1,13 @@
 {
   "hero": {
-    "hook": "Là où les idées nouvelles mènent à des résultats concrets",
-    "introduction": "Chez NexGen Agency, nous proposons des idées innovantes qui font prospérer votre entreprise. Nous créons du contenu attrayant et générant de vrais résultats, qu'il s'agisse de renforcer votre présence en ligne ou de vous connecter avec vos clients.",
+    "hook": "Des idées nouvelles pour des résultats concrets",
+    "introduction": "À l'agence NexGen, nous proposons des idées nouvelles qui font croître votre entreprise. Nous créons des contenus qui ont de l'allure et donnent des résultats concrets, qu'il s'agisse de renforcer votre présence en ligne ou d'établir un lien avec vos clients.",
     "buttonText": "Réservez votre place maintenant"
   },
   "about": {
     "header": "À propos",
     "tagline": "Du concept à la création : nous faisons briller votre vision",
-    "details": "Qu'est-ce qui nous différencie ? Nous sommes une équipe jeune et passionnée par ce que nous faisons. Notre âge est notre force, ce qui nous permet de rester à la pointe des dernières tendances et de sortir des sentiers battus. Nous abordons chaque projet avec énergie et créativité, en cherchant toujours à dépasser vos attentes. Si vous cherchez à faire passer votre marque au niveau supérieur, NexGen Agency est prête à vous aider à réussir.",
+    "details": "Qu'est-ce qui nous différencie? Nous sommes une équipe jeune et passionnée par ce que nous faisons. Notre âge est notre force, car il nous permet de rester à la pointe des dernières tendances et de sortir des sentiers battus. Nous abordons chaque projet avec énergie et créativité, en cherchant toujours à dépasser vos attentes. Si vous cherchez à faire passer votre marque au niveau supérieur, l'agence NexGen est prête à vous aider à réussir.",
     "buttonText": "Planifiez votre appel gratuit!"
   },
   "qualities": {
@@ -15,12 +15,12 @@
     "buttonText": "Parlez à nos experts!"
   },
   "benefits": {
-    "tagline": "Pourquoi se contenter de l'ordinaire ? Découvrez la différence NexGen!",
-    "details": "Prêt à élever votre marque avec des idées nouvelles qui produisent de vrais résultats ? Réservez dès aujourd'hui un appel de consultation gratuit avec nos experts et créons ensemble quelque chose d'extraordinaire!",
+    "tagline": "Pourquoi se contenter de l'ordinaire? Découvrez la différence NexGen!",
+    "details": "Prêt à rehausser votre marque avec des idées nouvelles qui donnent des résultats concrets? Réservez dès aujourd'hui un appel de consultation gratuit avec nos experts et créons ensemble quelque chose d'extraordinaire!",
     "buttonText": "Réservez votre consultation gratuite!"
   },
   "guarantee": {
-    "tagline": "Résultats sans risque : votre succès est garanti à 100 % ou vous êtes remboursé!",
+    "tagline": "Des résultats sans risque : votre succès est garanti à 100 % ou vous êtes remboursé!",
     "buttonText": "Commencez votre projet aujourd'hui!"
   }
 }
