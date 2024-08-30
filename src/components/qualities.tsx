@@ -45,23 +45,23 @@ const qualitiesFr = [
   {
     name: "Une équipe passionnée",
     description:
-      "Notre équipe jeune et dynamique se consacre à fournir des résultats avec créativité et enthousiasme.",
+      "Notre équipe jeune et dynamique se consacre à l'obtention de résultats avec créativité et enthousiasme.",
     icon: <UserGroupIcon />,
   },
   {
     name: "Sensibilisation aux tendances",
     description:
-      "Nous exploitons notre compréhension des dernières tendances pour créer du contenu qui trouve un écho auprès du public d'aujourd'hui.",
+      "Nous nous appuyons sur notre compréhension des dernières tendances pour créer un contenu qui trouve un écho auprès des publics d'aujourd'hui.",
     icon: <ArrowTrendingUpIcon />,
   },
   {
-    name: "Des idées nouvelles",
+    name: "Idées neuves",
     description:
-      "WNous apportons des solutions innovantes adaptées aux besoins de votre marque, vous aidant à garder une longueur d’avance sur la concurrence.",
+      "Nous apportons des solutions innovantes adaptées aux besoins de votre marque, vous aidant à garder une longueur d’avance sur la concurrence.",
     icon: <LightBulbIcon />,
   },
   {
-    name: "Une pensée hors du commun",
+    name: "Penser autrement",
     description:
       "Notre approche est fraîche et innovante, garantissant que votre contenu se démarque sur un marché encombré.",
     icon: <SparklesIcon />,
@@ -69,7 +69,7 @@ const qualitiesFr = [
   {
     name: "Résultats réels",
     description:
-      "Notre contenu n’est pas seulement esthétique ; il génère des résultats tangibles pour votre entreprise.",
+      "Notre contenu ne se contente pas d'être attrayant, il produit des résultats tangibles pour votre entreprise.",
     icon: <TrophyIcon />,
   },
 ];
