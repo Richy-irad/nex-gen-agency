@@ -43,7 +43,7 @@ export default function Navbar({ navItems, currentLang }: NavbarProps) {
           </Link>
         ))}
         <Menu>
-          <MenuButton className="inline-flex items-center gap-2 rounded-md bg-gray-800 py-1.5 px-3 text-sm uppercase font-semibold border border-white/5 bg-white/5 p-1 text-white">
+          <MenuButton className="inline-flex items-center gap-2 rounded-md py-1.5 px-3 text-sm uppercase font-semibold border border-white/5 bg-white/5 p-1 text-white">
             {currentLang}
             <ChevronDownIcon className="size-4 fill-white/60" />
           </MenuButton>

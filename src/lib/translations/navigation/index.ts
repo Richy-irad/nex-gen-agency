@@ -9,4 +9,4 @@ const translations: { [index: string]: any } = {
 };
 
 export const getTranslatedNavItems = async (locale: string) =>
-  translations[locale];
+  translations[locale]();

@@ -5,9 +5,9 @@ import { NextRequest, NextResponse } from "next/server";
 let locales = ["fr", "en"];
 
 function getLocale() {
-  let headers = { "accept-language": "fr, en" };
+  let headers = { "accept-language": "en, fr" };
   let languages = new Negotiator({ headers }).languages();
-  let defaultLocale = "fr";
+  let defaultLocale = "en";
 
   return match(languages, locales, defaultLocale);
 }
@@ -33,8 +33,8 @@ export default function middleware(request: NextRequest) {
 // configurations. Skips all internal paths
 export const config = {
   matcher: [
-    // skip all internal paths (_next)
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)",
+    // skip all internal paths e.g. (_next)
+    "/((?!api|studio|_next/static|_next/image|assets|favicon.ico|sw.js).*)",
     // Optional: only run on root (/) url
     "/",
   ],

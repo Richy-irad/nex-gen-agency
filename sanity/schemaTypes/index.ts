@@ -3,10 +3,9 @@
  */
 
 import { type SchemaTypeDefinition } from "sanity";
-import projectCategory from "./projectCategory";
-import projectType from "./projectType";
-import project from "./project";
+import { projectCategory } from "./projectCategory";
+import { project } from "./project";
 
 export const schemaTypes: { types: SchemaTypeDefinition[] } = {
-  types: [projectCategory, projectType, project],
+  types: [projectCategory, project],
 };

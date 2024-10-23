@@ -15,6 +15,9 @@ const config: Config = {
       fontSize: {
         "2.5xl": ["28px", "32px"],
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [],

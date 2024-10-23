@@ -6,7 +6,7 @@ import Benefits from "@/components/benefits";
 import { ShieldCheckIcon } from "@heroicons/react/24/solid";
 import { LangParams } from "@/lib/types";
 import { getTranslatedContent } from "@/lib/translations/content";
-import { getTranslatedBenefits } from "@/lib/translations/benefits/benefits";
+import { getTranslatedBenefits } from "@/lib/translations/benefits";
 import aboutImage from "../../../public/about-image.jpg";
 import HeroVideo from "@/components/hero-video";
 import logo from "../../../public/logo.jpg";
@@ -23,16 +23,6 @@ export default async function Home({ params }: { params: LangParams }) {
     <main className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between mt-20 lg:mt-24">
       {/* hero section */}
       <div className="text-center flex flex-col gap-y-8">
-        {/* <div className="flex gap-4 w-full items-center justify-center">
-          <div className="flex gap-2 lg:gap-4 items-center justify-center">
-            <Image
-              src={logo}
-              alt="logo"
-              className="w-12 h-12 lg:w-16 lg:h-16 rounded-lg"
-            />
-            <h1 className="text-2xl lg:text-4xl font-bold">NexGen Agency</h1>
-          </div>
-        </div> */}
         <h2 className="text-4xl lg:text-6xl font-bold">{hero.hook}</h2>
         <div className="flex w-full">
           <p className="basis-full lg:basis-2/3 mx-auto text-center text-base lg:text-lg text-zinc-300">
