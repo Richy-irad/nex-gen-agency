@@ -1,10 +1,10 @@
-import { client, SanityFetch } from "../../../../../sanity/lib/client";
+import { client, SanityFetch } from "../../../../sanity/lib/client";
 import { DynamicParams, ProjectType } from "@/lib/types";
 import {
   PROJECTS_SLUGS_QUERY,
   SIMILAR_PROJECTS_QUERY,
   SINGLE_PROJECT_QUERY,
-} from "../../../../../sanity/lib/queries";
+} from "../../../../sanity/lib/queries";
 import ProjectTypeExcerpt from "@/components/projects/descriptors/project-type";
 import ProjectCategoryExcerpt from "@/components/projects/descriptors/project-category";
 import ProjectImagesCarousel from "@/components/projects/project-images-carousel";
@@ -82,7 +82,7 @@ export default async function ProjectDetails({
   )?.value;
 
   return (
-    <main className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between mt-20 lg:mt-24">
+    <div className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between mt-20 lg:mt-24">
       <h1 className="text-4xl lg:text-6xl font-bold">{title}</h1>
       <div className="flex flex-col lg:flex-row gap-8">
         {project.projectType === "photography" ? (
@@ -99,7 +99,10 @@ export default async function ProjectDetails({
           <>
             {/* project video */}
             <div className="basis-full lg:basis-1/2 order-last lg:order-1 w-full">
-              <ProjectVideoPlayer videoUrl={project.projectVideo} />
+              <ProjectVideoPlayer
+                projectId={project.id}
+                videoUrl={project.projectVideo}
+              />
             </div>
           </>
         )}
@@ -133,6 +136,6 @@ export default async function ProjectDetails({
           </div>
         </div>
       )}
-    </main>
+    </div>
   );
 }

@@ -3,9 +3,16 @@
 import { CldVideoPlayer } from "next-cloudinary";
 import "next-cloudinary/dist/cld-video-player.css";
 
-export default function ProjectVideoPlayer({ videoUrl }: { videoUrl: string }) {
+export default function ProjectVideoPlayer({
+  projectId,
+  videoUrl,
+}: {
+  projectId: string;
+  videoUrl: string;
+}) {
   return (
     <CldVideoPlayer
+      id={projectId}
       width={1920}
       height={1080}
       src={videoUrl}

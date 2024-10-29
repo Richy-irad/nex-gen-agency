@@ -20,7 +20,7 @@ export default async function Home({ params }: { params: LangParams }) {
   const benefitsList = await getTranslatedBenefits(lang);
 
   return (
-    <main className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between mt-20 lg:mt-24">
+    <div className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between mt-20 lg:mt-24">
       {/* hero section */}
       <div className="text-center flex flex-col gap-y-8">
         <h2 className="text-4xl lg:text-6xl font-bold">{hero.hook}</h2>
@@ -124,6 +124,6 @@ export default async function Home({ params }: { params: LangParams }) {
 
       {/* footer */}
       <Footer />
-    </main>
+    </div>
   );
 }

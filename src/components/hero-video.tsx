@@ -6,6 +6,7 @@ import "next-cloudinary/dist/cld-video-player.css";
 export default function HeroVideo() {
   return (
     <CldVideoPlayer
+      id="home-hero-video"
       width={1920}
       height={1080}
       src="https://res.cloudinary.com/richy-irad/video/upload/v1724466817/hero-video_p6jvxd.mp4"

@@ -3,29 +3,15 @@
  *
  */
 
-import { createClient, type QueryParams } from "@sanity/client";
-import { apiVersion, projectId, dataset, useCdn, token } from "../env";
+import { createClient, type QueryParams } from "next-sanity";
 
-/**
- * Function used to query the sanity studio
- */
+import { apiVersion, dataset, projectId } from "../env";
+
 export const client = createClient({
-  apiVersion,
-  dataset,
   projectId,
-  useCdn,
-  token,
-});
-
-/**
- * Function used to write to sanity studio
- */
-export const writeClient = createClient({
-  apiVersion,
   dataset,
-  projectId,
-  useCdn,
-  token,
+  apiVersion,
+  useCdn: false, // Set to false if statically generating pages, using ISR or tag-based revalidation
 });
 
 /**
