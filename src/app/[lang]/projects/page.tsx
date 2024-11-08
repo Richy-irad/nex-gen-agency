@@ -7,7 +7,7 @@ import { LangParams } from "@/lib/types";
 import {
   ALL_PROJECTS_QUERY,
   CATEGORIES_QUERY,
-} from "../../../sanity/lib/queries";
+} from "../../../../sanity/lib/queries";
 import ProjectsList from "@/components/projects/projects-list";
 
 export default async function Projects({ params }: { params: LangParams }) {

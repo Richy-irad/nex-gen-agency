@@ -18,9 +18,9 @@ export default async function Layout({
   const { lang } = params;
   const navItems = await getTranslatedNavItems(lang);
   return (
-    <>
+    <main className="relative h-fit mx-5 md:mx-10 lg:mx-20 xl:mx-40 2xl:mx-96 pb-24">
       <Navbar navItems={navItems} currentLang={lang} />
       {children}
-    </>
+    </main>
   );
 }

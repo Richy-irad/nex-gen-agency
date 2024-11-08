@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} h-fit mx-5 md:mx-10 lg:mx-20 xl:mx-40 2xl:mx-96 pb-24 bg-gradient-to-br from-indigo-950 via-sky-950 to-cyan-950 text-white`}
+        className={`${inter.className} bg-gradient-to-br from-indigo-950 via-sky-950 to-cyan-950 text-white`}
       >
-        <main>{children}</main>
+        {children}
         <Analytics />
         <SpeedInsights />
       </body>

@@ -4,7 +4,7 @@ import {
   PROJECTS_SLUGS_QUERY,
   SIMILAR_PROJECTS_QUERY,
   SINGLE_PROJECT_QUERY,
-} from "../../../../sanity/lib/queries";
+} from "../../../../../sanity/lib/queries";
 import ProjectTypeExcerpt from "@/components/projects/descriptors/project-type";
 import ProjectCategoryExcerpt from "@/components/projects/descriptors/project-category";
 import ProjectImagesCarousel from "@/components/projects/project-images-carousel";
