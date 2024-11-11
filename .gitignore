@@ -37,3 +37,6 @@ next-env.d.ts
 
 # code-workspace
 *.code-workspace
+
+# vscode settings
+.vscode/

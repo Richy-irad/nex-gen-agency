@@ -6,10 +6,10 @@ import Benefits from "@/components/benefits";
 import { ShieldCheckIcon } from "@heroicons/react/24/solid";
 import { LangParams } from "@/lib/types";
 import { getTranslatedContent } from "@/lib/translations/content";
-import { getTranslatedBenefits } from "@/lib/translations/benefits/benefits";
+import { getTranslatedBenefits } from "@/lib/translations/benefits";
 import aboutImage from "../../../public/about-image.jpg";
 import HeroVideo from "@/components/hero-video";
-import Topbar from "@/components/top-bar";
+import logo from "../../../public/logo.jpg";
 
 export default async function Home({ params }: { params: LangParams }) {
   const { lang } = params;
@@ -20,10 +20,9 @@ export default async function Home({ params }: { params: LangParams }) {
   const benefitsList = await getTranslatedBenefits(lang);
 
   return (
-    <main className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between">
+    <div className="flex flex-col gap-y-20 lg:gap-y-32 items-center justify-between mt-20 lg:mt-24">
       {/* hero section */}
       <div className="text-center flex flex-col gap-y-8">
-        <Topbar currentLang={lang} />
         <h2 className="text-4xl lg:text-6xl font-bold">{hero.hook}</h2>
         <div className="flex w-full">
           <p className="basis-full lg:basis-2/3 mx-auto text-center text-base lg:text-lg text-zinc-300">
@@ -125,6 +124,6 @@ export default async function Home({ params }: { params: LangParams }) {
 
       {/* footer */}
       <Footer />
-    </main>
+    </div>
   );
 }
