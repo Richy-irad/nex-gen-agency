@@ -27,7 +27,6 @@ export default defineConfig({
         { id: "en", title: "English" },
         { id: "fr", title: "French" },
       ],
-      defaultLanguages: ["en"],
       fieldTypes: ["string", "text", "slug"],
     }),
     cloudinarySchemaPlugin(),
