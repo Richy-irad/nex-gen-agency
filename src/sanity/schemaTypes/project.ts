@@ -109,7 +109,7 @@ export const project = defineType({
     }),
     defineField({
       /**
-       * Uses internationalizedArrayText to internatiionalize the content of the description.
+       * Uses internationalizedArrayText to internationalize the content of the description.
        */
       name: "description",
       title: "Project description",

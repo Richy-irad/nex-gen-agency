@@ -1,15 +1,18 @@
 /**
- * API route to handle revalidation of content on change.
+ * API route to handle revalidation of content based on tags
  *
- * This is important to make sure that when an author updates content, then, the changes revalidate the cache, and content served to users is up-to-date.
+ * This important to make sure that even though individual projects have changed, we revalidate other routes that display the individual project, by revalidating the cache, and the content served to users.
  */
 
-import { revalidatePath } from "next/cache";
+import { revalidateTag } from "next/cache";
 import { type NextRequest, NextResponse } from "next/server";
 import { parseBody } from "next-sanity/webhook";
 
-type WebhookPaylod = { path?: string };
+type WebhookPayload = {
+  tags: string[];
+};
 
+// function to revalidate projects based on tags
 export async function POST(req: NextRequest) {
   try {
     // require the presence of a secret to revalidate the cache. If missing return error message
@@ -21,29 +24,31 @@ export async function POST(req: NextRequest) {
     }
 
     // check if signature is valid and get body from webhook payload
-    const { isValidSignature, body } = await parseBody<WebhookPaylod>(
+    const { isValidSignature, body } = await parseBody<WebhookPayload>(
       req,
       process.env.SANITY_REVALIDATE_SECRET,
-      true
     );
 
-    // check signature before validating.
+    console.log(body);
+
+    // check signature before validating
     if (!isValidSignature) {
       const message = "Invalid signature";
       return new Response(JSON.stringify({ message, isValidSignature, body }), {
         status: 401,
       });
-    } else if (!body?.path) {
+    } else if (!Array.isArray(body?.tags) || !body.tags.length) {
       const message = "Bad request";
       return new Response(JSON.stringify({ message, body }), { status: 400 });
     }
 
-    // revalidate the path and return response
-    revalidatePath(body.path);
-    const message = `Updated Route: ${body.path}`;
-    return NextResponse.json({ body, message });
+    // revalidate the tags
+    body.tags.forEach((tag) => {
+      revalidateTag(tag);
+    });
+
+    return NextResponse.json({ body });
   } catch (error) {
-    // catch any errors that may occur
     console.error(error);
     return new Response((error as Error).message, { status: 500 });
   }
